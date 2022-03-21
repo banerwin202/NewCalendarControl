@@ -9,12 +9,24 @@
 /* Begin PBXBuildFile section */
 		AAA8D6F727E46C8300D8D39B /* CalendarControl.docc in Sources */ = {isa = PBXBuildFile; fileRef = AAA8D6F627E46C8300D8D39B /* CalendarControl.docc */; };
 		AAA8D6F827E46C8300D8D39B /* CalendarControl.h in Headers */ = {isa = PBXBuildFile; fileRef = AAA8D6F527E46C8300D8D39B /* CalendarControl.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AAA8D6FF27E46CCA00D8D39B /* Day.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA8D6FE27E46CCA00D8D39B /* Day.swift */; };
+		AAA8D70127E46CD900D8D39B /* MonthMetadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA8D70027E46CD900D8D39B /* MonthMetadata.swift */; };
+		AAA8D70627E46CF400D8D39B /* CalendarPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA8D70227E46CF400D8D39B /* CalendarPickerViewController.swift */; };
+		AAA8D70727E46CF400D8D39B /* CalendarPickerHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA8D70327E46CF400D8D39B /* CalendarPickerHeaderView.swift */; };
+		AAA8D70827E46CF400D8D39B /* CalendarPickerFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA8D70427E46CF400D8D39B /* CalendarPickerFooterView.swift */; };
+		AAA8D70927E46CF400D8D39B /* CalendarDateCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA8D70527E46CF400D8D39B /* CalendarDateCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		AAA8D6F227E46C8300D8D39B /* CalendarControl.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CalendarControl.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAA8D6F527E46C8300D8D39B /* CalendarControl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CalendarControl.h; sourceTree = "<group>"; };
 		AAA8D6F627E46C8300D8D39B /* CalendarControl.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = CalendarControl.docc; sourceTree = "<group>"; };
+		AAA8D6FE27E46CCA00D8D39B /* Day.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Day.swift; sourceTree = "<group>"; };
+		AAA8D70027E46CD900D8D39B /* MonthMetadata.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonthMetadata.swift; sourceTree = "<group>"; };
+		AAA8D70227E46CF400D8D39B /* CalendarPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarPickerViewController.swift; sourceTree = "<group>"; };
+		AAA8D70327E46CF400D8D39B /* CalendarPickerHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarPickerHeaderView.swift; sourceTree = "<group>"; };
+		AAA8D70427E46CF400D8D39B /* CalendarPickerFooterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarPickerFooterView.swift; sourceTree = "<group>"; };
+		AAA8D70527E46CF400D8D39B /* CalendarDateCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarDateCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,10 +59,40 @@
 		AAA8D6F427E46C8300D8D39B /* CalendarControl */ = {
 			isa = PBXGroup;
 			children = (
+				AAA8D70C27E46D1C00D8D39B /* View */,
+				AAA8D70B27E46D1200D8D39B /* ViewController */,
+				AAA8D70A27E46D0500D8D39B /* Model */,
 				AAA8D6F527E46C8300D8D39B /* CalendarControl.h */,
 				AAA8D6F627E46C8300D8D39B /* CalendarControl.docc */,
 			);
 			path = CalendarControl;
+			sourceTree = "<group>";
+		};
+		AAA8D70A27E46D0500D8D39B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AAA8D70027E46CD900D8D39B /* MonthMetadata.swift */,
+				AAA8D6FE27E46CCA00D8D39B /* Day.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AAA8D70B27E46D1200D8D39B /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				AAA8D70227E46CF400D8D39B /* CalendarPickerViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		AAA8D70C27E46D1C00D8D39B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AAA8D70527E46CF400D8D39B /* CalendarDateCollectionViewCell.swift */,
+				AAA8D70427E46CF400D8D39B /* CalendarPickerFooterView.swift */,
+				AAA8D70327E46CF400D8D39B /* CalendarPickerHeaderView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -132,7 +174,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AAA8D70627E46CF400D8D39B /* CalendarPickerViewController.swift in Sources */,
+				AAA8D6FF27E46CCA00D8D39B /* Day.swift in Sources */,
+				AAA8D70127E46CD900D8D39B /* MonthMetadata.swift in Sources */,
+				AAA8D70727E46CF400D8D39B /* CalendarPickerHeaderView.swift in Sources */,
 				AAA8D6F727E46C8300D8D39B /* CalendarControl.docc in Sources */,
+				AAA8D70927E46CF400D8D39B /* CalendarDateCollectionViewCell.swift in Sources */,
+				AAA8D70827E46CF400D8D39B /* CalendarPickerFooterView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,6 +312,7 @@
 		AAA8D6FC27E46C8300D8D39B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -292,6 +341,7 @@
 		AAA8D6FD27E46C8300D8D39B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
